@@ -1,4 +1,4 @@
-echo "$DOCKER_PASSWORD" | docker login ghcr.io -u "$DOCKER_USERNAME" --password-stdin
+echo "$DOCKER_PASS" | docker login ghcr.io -u "$DOCKER_USER" --password-stdin
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
 else
